@@ -1,0 +1,231 @@
+.podcastsection{
+    margin-bottom: 100px;
+}
+.cover img{
+    height: 306px;
+    width: auto;
+    object-fit: cover;
+}
+.detailcontent{
+    font-family: var(--text-font1);
+    font-size: 27px;
+    line-height: 1.5;
+}
+
+.detailplaybutton {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.detailplaybutton:hover .detailtriangle {
+    left: 70%;
+}
+
+.detailrectangle {
+    border-radius: 13px 13px 13px 13px;
+    background-color: var(--color-white);
+    width: 140px;
+    height: 35.2px;
+    float: left;
+    transition: all 0.3s ease-in-out;
+    padding-left: 100px;
+}
+
+.detailtriangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20PX solid var(--color-black);
+    border-bottom: 12px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.detailrectangleblue {
+    border-radius: 13px 13px 13px 13px;
+    background-color: var(--color-blue);
+    width: 40px;
+    height: 35.3px;
+    float: left;
+    position: absolute;
+    left: 8px;
+    bottom: 15.6%;
+}
+
+.detailrectangle2 {
+    background-color: var(--color-blue);
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 10px;
+    height: 35.2px;
+    width: 100px;
+    position: relative;
+    left: 40;
+    transform-origin: 50% 100%;
+}
+
+.detailrectangle2 p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: absolute;
+    left: 17%;
+    top: 15%;
+}
+
+.skew {
+    transform: skew(25deg);
+}
+
+.reskew {
+    transform: skew(-25deg);
+}
+
+.rotate {
+    transform: scaleX(-1);
+    margin-left: 30px;
+}
+
+.rotate .detailrectangle2 {
+    width: 140px;
+}
+
+.rotate .detailrectangle2 p {
+    left: 8%;
+    transform: scaleX(-1);
+}
+
+.rotate .detailtriangle {
+    left: 133%;
+}
+
+.rotate:hover .detailtriangle {
+    left: 170%;
+}
+
+.playernav{
+    padding-top: 41px;
+    position: relative;
+    left: 50%;
+    color: var(--color-black);
+}
+
+.playernav2{
+    padding-top: 41px;
+    position: relative;
+    right: 50%;
+    color: var(--color-black);
+}
+
+
+.bluecircle{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+    position: relative;
+    right: 12%;
+    top: 20%;
+}
+
+.bluecircle i{
+    position: relative;
+    left: 28%;
+    top: 20%;
+    color: var(--color-black);
+}
+.bluecircle i:hover{
+    color: var(--color-white);
+}
+
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+
+.slider2 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    position: relative;
+    background: var(--color-black);
+    outline: none;
+    margin-top: 40px;
+}
+
+.slider2 input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 25%;
+    top: 15px;
+    width: 50%;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-blue);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.align-right{
+    text-align: right;
+    padding-top: 5px;
+    font-family: var(--text-font1);
+    font-size: 20px;
+}
+
+.minimum{
+    padding-left: 20px;
+    padding-top: 5px;
+    font-family: var(--text-font1);
+    font-size: 20px;
+}
+
+.subtitel{
+    font-family: var(--text-font1);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.hostnames{
+    font-family: var(--text-font1);
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.names{
+    font-family: var(--text-font2);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.comment{
+    font-family: var(--text-font1);
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.profilepicture{
+    border-radius: 18%;
+}
