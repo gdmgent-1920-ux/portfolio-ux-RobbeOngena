@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*------ GENERALLY RULES--------- */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.logo{
+    transition: all ease-in-out 0.5s;
+}
+.logo:hover{
+    filter: invert(75%);
+}
+img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.notvisible{
+    display:  none;
+}
+
+.smallertitel{
+    font-size: 35px;
+}
+.smallertitel2{
+    font-size: 25px;
+}
+
+h1 {
+    font-family: var(--text-font2);
+    font-size: 60px;
+    color: var(--color-black);
+    font-weight: 100;
+    margin: 0;
+    padding-top: 51px;
+}
+
+h2 {
+    font-family: var(--text-font1);
+    font-size: 47px;
+    color: var(--color-white);
+    font-weight: 100;
+}
+
+h3 {
+    font-family: var(--text-font2);
+    font-size: 79px;
+    color: var(--color-white);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: var(--text-font1);
+    font-size: 30px;
+    color: var(--color-black);
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+/* Buttons */
+/* playbutton */
+.playbutton {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playbutton1 {
+    display: inline-block;
+    position: relative;
+    bottom: 70%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    border: solid var(--color-blue) 28px;
+    transition: all 0.5s ease-in-out;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20PX solid var(--color-blue);
+    border-bottom: 12px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+/*------ HEADER--------- */
+header {
+    background-color: var(--color-red);
+
+}
+
+.header {
+    padding-top: 16px;
+    background-color: var(--color-red);
+    
+}
+
+.headertitle1 {
+    color: var(--color-white);
+}
+.headertitle1:hover {
+    color: var(--color-black);
+}
+.headertitle2:hover {
+    color: var(--color-white);
+}.headertitle3:hover {
+    color: var(--color-white);
+}.headertitle4:hover {
+    color: var(--color-white);
+}
+
+.headertitles {
+    font-size: 27px;
+    font-family: var(--text-font1);
+    padding-top: 20px
+}
+
+.headertitles a {
+    padding-right: 24px
+}
+
+/*------ MAIN--------- */
+main {
+    margin-top: 32px;
+}
+
+/* main: top3 */
+.een {
+    height: 319px;
+}
+
+.een:hover .circle {
+    width: 120px;
+    height: 120px;
+}
+
+.een:hover .triangle {
+    border-top: 20px solid transparent;
+    border-left: 30PX solid var(--color-blue);
+    border-bottom: 20px solid transparent;
+}
+
+.een img {
+    height: 319px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.een:hover img {
+    opacity: 60%;
+}
+
+.twee {
+    height: 152px;
+}
+
+.twee:hover .playbutton1 {
+    margin-left: 20px;
+}
+
+.twee:hover img {
+    opacity: 60%;
+}
+
+.twee img {
+    height: 152px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.twee:nth-of-type(2) {
+    margin-top: 15px;
+}
+
+.genre p,
+.genre2 p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: var(--text-font1);
+    color: var(--color-white);
+    padding: 5px;
+}
+
+.genre,
+.genre2 {
+    position: absolute;
+    left: 3%;
+    bottom: 90%;
+    background-color: var(--color-black);
+    margin-top: 15px;
+    border-radius: 10%;
+    height: auto;
+    width: auto;
+}
+
+.genre2 {
+    bottom: 215%;
+    left: 4px;
+    margin-top: 40px;
+}
+
+.podcasttitel,
+.podcasttitel2 {
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 5%;
+    padding: 0 10px;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+}
+
+.podcasttitel2 {
+    bottom: 110%;
+    left: 1%;
+}
+
+/*------ MAIN PART 2.1--------- */
+.listrow img {
+    opacity: 80%;
+}
+
+.list {
+    padding-bottom: 10px;
+}
+
+.listitem {
+    padding-bottom: 25px;
+}
+
+
+.listitemcolor {
+    background-color: #650801;
+    height: 92px;
+}
+
+.listgenre p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: var(--text-font1);
+    color: var(--color-white);
+    padding: 5px;
+}
+
+.listgenre {
+    position: absolute;
+    left: 5%;
+    bottom: 76%;
+    background-color: var(--color-black);
+    margin-top: 15px;
+    border-radius: 10%;
+    height: auto;
+    width: auto;
+}
+
+.listplaybutton {
+    display: inline-block;
+    position: absolute;
+    bottom: 25%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.listitem:hover h4{
+    color: var(--color-white);
+}
+
+.listitem:hover .listplaybutton{
+    margin-left: 10px;
+}
+
+
+.listcircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    border: solid var(--color-blue) 6px;
+}
+
+.listtriangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 18PX solid var(--color-blue);
+    border-bottom: 10px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+
+.listpodcasttitel {
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 28%;
+    padding: 0 10px;
+    height: auto;
+    width: auto;
+    transition: all 1s ease-in-out;
+}
+
+/*------ MAIN PART 2.2--------- */
+.buttontitel,
+.buttontitel2 {
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 56%;
+    padding: 0 10px;
+    height: auto;
+    width: auto;
+    font-size: 10px;
+    left: 5%;
+}
+
+.buttontitel2 {
+    bottom: 5%;
+}
+
+.buttontitel2 h3 {
+    font-size: 56px;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.playbutton3 {
+    display: inline-block;
+    position: relative;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.row .rechts:hover .circle {
+    width: 120px;
+    height: 120px;
+}
+
+.row .rechts:hover .triangle {
+    border-top: 20px solid transparent;
+    border-left: 30PX solid var(--color-blue);
+    border-bottom: 20px solid transparent;
+}
+.row .rechts:hover img {
+    opacity: 80%;
+}
+
+.rechts {
+    height: 333px;
+}
+
+.rechts:nth-of-type(2) {
+    margin-top: 55px;
+}
+
+.rechts img {
+    height: 333px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.rechts .notsohigh {
+    object-fit: cover;
+}
+
+.info {
+    font-family: var(--text-font1);
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+/*------ FOOTER--------- */
+footer {
+    background-color: var(--color-red);
+    padding: 15px 0px 15px 0px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: var(--color-red);
+
+}
+
+.footertitle {
+    font-family: var(--text-font1);
+    color: var(--color-white);
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footertext {
+    font-family: var(--text-font1);
+    color: var(--color-white);
+    font-size: 14px;
+    margin: 0;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.footertext1 {
+    padding-top: 20px;
+    font-family: var(--text-font1);
+    color: var(--color-white);
+    font-size: 14px;
+    margin: 0;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.socials {
+    color: var(--color-white);
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.socials:hover{
+    color: var(--color-black);
+}
+
+/*------ MOBILE--------- */
+@media all and (min-width:567px)
