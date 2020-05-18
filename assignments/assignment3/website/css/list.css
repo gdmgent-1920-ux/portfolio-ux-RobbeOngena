@@ -1,51 +1,113 @@
-.cards {
-    margin-left: 64px;
-}
-
-.card {
-    background-color: var(--color-red);
-    border-radius: 15px 0px 0px 15px;
-    margin-right: -22px;
-    margin-bottom: 20px;
-    height: 230px;
-}
-
-.cardcontent p {
-    font-size: 14px;
-    font-family: var(--text-font1);
-    line-height: 1.8;
-    color: var(--color-white);
-    padding-top: 20px;
-    width: 485px;
-}
-
-.cardtitel {
-    padding-top: 10px;
-}
-
+/*------ GENERALLY RULES--------- */
 .row h1 {
     padding-bottom: 20px;
 }
 
-.cardtitel,
-.cardcontent,
-.cardplay {
-    padding-left: 15px;
+/* Buttons */
+/* FILTER BUTTON */
+.filterdropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
 }
 
-.cardimage img {
-    border-radius: 0px 15px 15px 0px;
-    object-fit: cover;
-    width: ;
+button {
+    background-color: transparent;
+    border: none;
 }
 
+.dropdown {
+    position: relative;
+    left: 40%;
+    padding-top: 5px;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -29%;
+    background-color: var(--color-blue);
+    border-radius: 15%;
+    margin-top: -5px;
+}
+
+.dropdown-content a {
+    color: var(--color-white);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: var(--text-font2);
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px var(--color-black);
+    font-size: 30px;
+    font-family: var(--text-font2);
+}
+
+.dropdown-content a:nth-of-type(4) {
+    border-bottom: none;
+}
+
+.dropdown-content a:nth-of-type(1) {
+    color: var(--color-black);
+}
+
+.dropdown-content a:nth-of-type(1):hover {
+    color: var(--color-white);
+}
+
+.dropdown-content a:hover {
+    color: var(--color-black);
+}
+
+.arrow {
+    border: solid var(--color-black);
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.filtercircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtertriangle {
+    width: 0;
+    height: 0;
+    border-top: 1px solid transparent;
+    border-left: 5PX solid var(--color-black);
+    border-bottom: 1px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* CARD BUTTON */
 .cardplaybutton {
     display: inline-block;
     margin-left: 10px;
     margin-top: 20px;
 }
 
-.cardplaybutton:hover .cardrectangle{
+.cardplaybutton:hover .cardrectangle {
     width: 150px;
 }
 
@@ -108,10 +170,66 @@
     top: 15%;
 }
 
+/* MAIN RULES */
+.main {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+/* cards */
+.cards {
+    margin-left: 64px;
+    margin-bottom: 194px;
+}
+
+.card {
+    background-color: var(--color-red);
+    border-radius: 15px 0px 0px 15px;
+    margin-right: -22px;
+    margin-bottom: 20px;
+    height: 230px;
+}
+
+.cardcontent p {
+    font-size: 14px;
+    font-family: var(--text-font1);
+    line-height: 1.8;
+    color: var(--color-white);
+    padding-top: 20px;
+    width: 485px;
+}
+
+.cardtitel {
+    padding-top: 10px;
+}
+
+.cardtitel,
+.cardcontent,
+.cardplay {
+    padding-left: 15px;
+}
+
+.cardimage img {
+    border-radius: 0px 15px 15px 0px;
+    object-fit: cover;
+    width: ;
+}
+
+
+
+/* sidebar */
+.sidebar {
+    width: 298px;
+    background: linear-gradient(180deg, rgba(190, 31, 44, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    margin-top: 0px;
+    padding-top: 68px;
+}
+
+/* filters */
 .filteritem {
     height: 350px;
 }
-
 
 .filtertitel {
     font-family: var(--text-font2);
@@ -121,122 +239,7 @@
     text-align: center;
 }
 
-.sidebar {
-    width: 298px;
-    background: linear-gradient(180deg, rgba(190,31,44,1) 35%, rgba(0,0,0,1) 100%);
-    margin-top: 0px;
-    padding-top: 68px;
-}
-
-/* Dropdown Button */
-.filterdropbtn {
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    transition: all 0.5s ease-in-out;
-    transform: rotate(90deg);
-}
-button{
-    background-color: transparent;
-    border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    left: 40%;
-    padding-top: 5px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: block;
-    position: absolute;
-    width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    left: -29%;
-    background-color: var(--color-blue);
-    border-radius: 15%;
-    margin-top: -5px;
-}
-
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: var(--color-white);
-    padding: 12px 16px;
-    text-decoration: none;
-    font-family: var(--text-font2);
-    display: block;
-    text-align: center;
-    border-bottom: solid 1px var(--color-black);
-    font-size: 30px;
-    font-family: var(--text-font2);
-}
-
-.dropdown-content a:nth-of-type(4) {
-    border-bottom: none;
-}
-.dropdown-content a:nth-of-type(1) {
-   color: var(--color-black);
-}
-.dropdown-content a:nth-of-type(1):hover {
-    color: var(--color-white);
- }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    color: var(--color-black);
-}
-
-
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.arrow {
-    border: solid var(--color-black);
-    border-width: 0 7px 7px 0;
-    display: inline-block;
-    padding: 8px;
-    
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-
-.filtercircle {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: var(--color-blue);
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.filtertriangle {
-    width: 0;
-    height: 0;
-    border-top: 1px solid transparent;
-    border-left: 5PX solid var(--color-black);
-    border-bottom: 1px solid transparent;
-    position: relative;
-    top: 50%;
-    left: 56%;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease-in-out;
-}
-
-.main {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-}
-
+/* slider (duration filter */
 .slider {
     -webkit-appearance: none;
     width: 90%;
@@ -258,7 +261,6 @@ button{
     height: 18px;
     margin: 0;
     padding: 0;
-
 }
 
 .slider::-webkit-slider-thumb {
@@ -274,17 +276,20 @@ button{
     outline: 0;
 }
 
-.value-min, .value-max{
+.value-min,
+.value-max {
     padding-top: 40px;
-
     font-size: 16px;
     font-family: var(--text-font2);
     font-weight: 700;
+    color: var(--color-white)
 }
-.value-max{
+
+.value-max {
     padding-left: 60px;
 }
 
-.listfooter{
+/* FOOTER RULES */
+.listfooter {
     margin-top: 0;
 }
