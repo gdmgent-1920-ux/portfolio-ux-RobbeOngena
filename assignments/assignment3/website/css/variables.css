@@ -1,0 +1,13 @@
+/**
+ * Variables
+ */
+
+:root {
+  --color-black: #232425;
+  --color-blue: #05DBF1;
+  --color-white: #FFFFFF;
+  --color-red: #BE1F2C;
+
+  --text-font1: 'Manrope', sans-serif;
+  --text-font2: 'Maven Pro', sans-serif;
+}
