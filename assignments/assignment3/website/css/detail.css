@@ -1,17 +1,26 @@
-.podcastsection{
-    margin-bottom: 100px;
-}
-.cover img{
-    height: 306px;
-    width: auto;
-    object-fit: cover;
-}
-.detailcontent{
-    font-family: var(--text-font1);
-    font-size: 27px;
-    line-height: 1.5;
+/* GENERALLY RULES */
+.text-right {
+    text-align: right;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.skew {
+    transform: skew(25deg);
+}
+
+.reskew {
+    transform: skew(-25deg);
+}
+
+.rotate {
+    transform: scaleX(-1);
+    margin-left: 30px;
+}
+
+/* Buttons */
 .detailplaybutton {
     display: inline-block;
     margin-left: 60px;
@@ -79,19 +88,6 @@
     top: 15%;
 }
 
-.skew {
-    transform: skew(25deg);
-}
-
-.reskew {
-    transform: skew(-25deg);
-}
-
-.rotate {
-    transform: scaleX(-1);
-    margin-left: 30px;
-}
-
 .rotate .detailrectangle2 {
     width: 140px;
 }
@@ -109,23 +105,41 @@
     left: 170%;
 }
 
-.playernav{
+/* MAIN */
+/* podcastsection */
+.podcastsection {
+    margin-bottom: 100px;
+}
+
+.cover img {
+    height: 306px;
+    width: auto;
+    object-fit: cover;
+}
+
+.detailcontent {
+    font-family: var(--text-font1);
+    font-size: 27px;
+    line-height: 1.5;
+}
+
+/* webplayer */
+.playernav {
     padding-top: 41px;
     position: relative;
     left: 50%;
     color: var(--color-black);
 }
 
-.playernav2{
+.playernav2 {
     padding-top: 41px;
     position: relative;
     right: 50%;
     color: var(--color-black);
 }
 
-
-.bluecircle{
-    height:80px;
+.bluecircle {
+    height: 80px;
     width: 80px;
     border-radius: 50%;
     background-color: var(--color-blue);
@@ -134,21 +148,15 @@
     top: 20%;
 }
 
-.bluecircle i{
+.bluecircle i {
     position: relative;
     left: 28%;
     top: 20%;
     color: var(--color-black);
 }
-.bluecircle i:hover{
-    color: var(--color-white);
-}
 
-.text-right{
-    text-align: right;
-}
-.text-left{
-    text-align: left;
+.bluecircle i:hover {
+    color: var(--color-white);
 }
 
 .slider2 {
@@ -172,7 +180,6 @@
     height: 18px;
     margin: 0;
     padding: 0;
-
 }
 
 .slider2::-webkit-slider-thumb {
@@ -188,44 +195,49 @@
     outline: 0;
 }
 
-.align-right{
+.align-right {
     text-align: right;
     padding-top: 5px;
     font-family: var(--text-font1);
     font-size: 20px;
 }
 
-.minimum{
+.minimum {
     padding-left: 20px;
     padding-top: 5px;
     font-family: var(--text-font1);
     font-size: 20px;
 }
 
-.subtitel{
+/* extrasections */
+.extrasections {
+    margin-bottom: 153px;
+}
+
+.subtitel {
     font-family: var(--text-font1);
     font-size: 40px;
     font-weight: 100;
 }
 
-.hostnames{
+.hostnames {
     font-family: var(--text-font1);
     font-size: 25px;
     font-weight: 100;
 }
 
-.names{
+.names {
     font-family: var(--text-font2);
     font-size: 25px;
     font-weight: bold;
 }
 
-.comment{
+.comment {
     font-family: var(--text-font1);
     font-size: 27px;
     font-weight: 100;
 }
 
-.profilepicture{
+.profilepicture {
     border-radius: 18%;
 }
