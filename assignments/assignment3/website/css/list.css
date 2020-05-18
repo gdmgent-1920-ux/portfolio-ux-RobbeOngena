@@ -1,0 +1,290 @@
+.cards {
+    margin-left: 64px;
+}
+
+.card {
+    background-color: var(--color-red);
+    border-radius: 15px 0px 0px 15px;
+    margin-right: -22px;
+    margin-bottom: 20px;
+    height: 230px;
+}
+
+.cardcontent p {
+    font-size: 14px;
+    font-family: var(--text-font1);
+    line-height: 1.8;
+    color: var(--color-white);
+    padding-top: 20px;
+    width: 485px;
+}
+
+.cardtitel {
+    padding-top: 10px;
+}
+
+.row h1 {
+    padding-bottom: 20px;
+}
+
+.cardtitel,
+.cardcontent,
+.cardplay {
+    padding-left: 15px;
+}
+
+.cardimage img {
+    border-radius: 0px 15px 15px 0px;
+    object-fit: cover;
+    width: ;
+}
+
+.cardplaybutton {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cardplaybutton:hover .cardrectangle{
+    width: 150px;
+}
+
+.cardrectangle {
+    border-radius: 13px 13px 13px 13px;
+    background-color: var(--color-white);
+    width: 140px;
+    height: 35.2px;
+    float: left;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.cardtriangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20PX solid var(--color-black);
+    border-bottom: 12px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.cardrectangleblue {
+    border-radius: 13px 13px 13px 13px;
+    background-color: var(--color-blue);
+    width: 40px;
+    height: 35.3px;
+    float: left;
+    position: absolute;
+    left: 8px;
+    bottom: 15.6%;
+
+}
+
+.cardrectangle2 {
+    background-color: var(--color-blue);
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 10px;
+    height: 35.2px;
+    width: 100px;
+    position: relative;
+    left: 40;
+    transform: skew(25deg);
+    transform-origin: 50% 100%;
+}
+
+.cardrectangle2 p {
+    transform: skew(-25deg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: absolute;
+    left: 27%;
+    top: 15%;
+}
+
+.filteritem {
+    height: 350px;
+}
+
+
+.filtertitel {
+    font-family: var(--text-font2);
+    font-size: 39px;
+    color: var(--color-white);
+    font-weight: 700;
+    text-align: center;
+}
+
+.sidebar {
+    width: 298px;
+    background: linear-gradient(180deg, rgba(190,31,44,1) 35%, rgba(0,0,0,1) 100%);
+    margin-top: 0px;
+    padding-top: 68px;
+}
+
+/* Dropdown Button */
+.filterdropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    left: 40%;
+    padding-top: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: block;
+    position: absolute;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -29%;
+    background-color: var(--color-blue);
+    border-radius: 15%;
+    margin-top: -5px;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--color-white);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: var(--text-font2);
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px var(--color-black);
+    font-size: 30px;
+    font-family: var(--text-font2);
+}
+
+.dropdown-content a:nth-of-type(4) {
+    border-bottom: none;
+}
+.dropdown-content a:nth-of-type(1) {
+   color: var(--color-black);
+}
+.dropdown-content a:nth-of-type(1):hover {
+    color: var(--color-white);
+ }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: var(--color-black);
+}
+
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.arrow {
+    border: solid var(--color-black);
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 8px;
+    
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.filtercircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filtertriangle {
+    width: 0;
+    height: 0;
+    border-top: 1px solid transparent;
+    border-left: 5PX solid var(--color-black);
+    border-bottom: 1px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.main {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    background: var(--color-black);
+    outline: none;
+    margin-top: 20px;
+}
+
+.slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 25%;
+    top: 15px;
+    width: 50%;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--color-blue);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.value-min, .value-max{
+    padding-top: 40px;
+
+    font-size: 16px;
+    font-family: var(--text-font2);
+    font-weight: 700;
+}
+.value-max{
+    padding-left: 60px;
+}
+
+.listfooter{
+    margin-top: 0;
+}
