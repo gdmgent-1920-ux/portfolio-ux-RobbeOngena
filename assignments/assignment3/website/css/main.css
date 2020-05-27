@@ -480,5 +480,5 @@ footer {
     color: var(--color-black);
 }
 
-/*------ MOBILE--------- */
-@media all and (min-width:567px)
+/*------ WEB--------- */
+@media (min-width:768px){}
