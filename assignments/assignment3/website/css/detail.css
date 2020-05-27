@@ -28,7 +28,7 @@
 }
 
 .detailplaybutton:hover .detailtriangle {
-    left: 70%;
+    right: 100%;
 }
 
 .detailrectangle {
@@ -49,7 +49,19 @@
     border-bottom: 12px solid transparent;
     position: relative;
     top: 50%;
-    left: 33%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+.detailtriangle2 {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20PX solid var(--color-black);
+    border-bottom: 12px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 250%;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease-in-out;
 }
@@ -72,7 +84,7 @@
     height: 35.2px;
     width: 100px;
     position: relative;
-    left: 40;
+    left: 40px;
     transform-origin: 50% 100%;
 }
 
